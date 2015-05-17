@@ -1,4 +1,5 @@
-var express = require('express');
+var express = require('express')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ // , hash = require('./pass').hash;   
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -7,10 +8,34 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 //var users = require('./routes/users');
 
+var knex = require('knex')({
+  client: 'mysql',
+  connection: {
+    host     : 'localhost',
+    user     : 'root',
+    password : 'root',
+    database : 'trackers',
+    charset  : 'utf8'
+  },
+  pool: {
+    min: 0,
+    max: 7
+  }
+});
+
+var bookshelf = require('bookshelf')(knex);
+
+var Users = bookshelf.Model.extend({
+  tableName: 'users'
+});
+
+var users = Users;
+
+
 var app = express();
 
-app.locals.pagetitle = "Best Website";
-
+app.locals.pagetitle = "Fit Tracker";
+app.locals.users = users;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -30,6 +55,7 @@ app.use('/ratetrackers', routes);
 app.use('/reportissue', routes);
 app.use('/about', routes);
 app.use('/contact', routes);
+app.use('/login', routes);
 //app.use('/users', users);
 
 // catch 404 and forward to error handler
