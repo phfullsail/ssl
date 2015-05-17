@@ -5,40 +5,43 @@
   <body class="<%= classname %>">
   	<% include partials/page/header.ejs %>
   	<div class="container form-container">
-	  	<form role="form">
-	  	<h2 class="form-signin-heading">Fit Tracker Sign Up</h2>
-			<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<div class="form-group">
-            <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+	  	<form role="form" class="form-signup">
+	  	<div class="formBg">
+		  	<div class="formLogo"><img src="/images/fitlogo.jpg" width="200px" height="78px" alt="Fit Tracker Logo" /></div>
+		  	<h2 class="form-signin-heading">Sign Up</h2>
+	  		
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6">
+						<div class="form-group">
+	            <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<div class="form-group">
-						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
-					</div>
-				</div>
-			</div>
 
-			<div class="form-group">
-				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
-			</div>
+				<div class="form-group">
+					<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+				</div>
 
-			<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<div class="form-group">
-						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6">
+						<div class="form-group">
+							<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<div class="form-group">
-						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-					</div>
-				</div>
+				
+				<input type="submit" value="Register" class="btn btn-info btn-block">
 			</div>
-			
-			<input type="submit" value="Register" class="btn btn-info btn-block">
-		
 		</form>
        </div>
 	 	<div id="footer">

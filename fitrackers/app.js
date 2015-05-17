@@ -25,17 +25,17 @@ var knex = require('knex')({
 
 var bookshelf = require('bookshelf')(knex);
 
-var Users = bookshelf.Model.extend({
+var User = bookshelf.Model.extend({
   tableName: 'users'
 });
 
-var users = Users;
+
 
 
 var app = express();
 
 app.locals.pagetitle = "Fit Tracker";
-app.locals.users = users;
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

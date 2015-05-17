@@ -51,43 +51,43 @@ router.get('/home', function(req, res, next) {
 
 router.get('/toprated', function(req, res, next) {
   res.render('toprated', { 
-  	title: 'Top Rated Trackers',
+  	title: 'Fit Tracker Top Rated',
   	classname: 'toprated' });
 });
 
 router.get('/alltrackers', function(req, res, next) {
   res.render('alltrackers', { 
-  	title: 'All Trackers',
+  	title: 'Fit Tracker All Trackers',
   	classname: 'alltrackers' });
 });
 
 router.get('/addtrackers', function(req, res, next) {
   res.render('add', { 
-  	title: 'Add Trackers',
+  	title: 'Fit Tracker Add Trackers',
   	classname: 'addtrackers' });
 });
 
 router.get('/ratetrackers', function(req, res, next) {
   res.render('rate', { 
-  	title: 'Rate Trackers',
+  	title: 'Fit Tracker Rate Trackers',
   	classname: 'ratetrackers' });
 });
 
 router.get('/reportissue', function(req, res, next) {
   res.render('reportissue', { 
-  	title: 'Report Issue',
+  	title: 'Fit Tracker Report Issue',
   	classname: 'reportissue' });
 });
 
 router.get('/about', function(req, res, next) {
   res.render('about', { 
-  	title: 'About Us',
+  	title: 'Fit Tracker About Us',
   	classname: 'about' });
 });
 
 router.get('/contact', function(req, res, next) {
   res.render('contact', { 
-  	title: 'Contact Us',
+  	title: 'Fit Tracker Contact Us',
   	classname: 'contact' });
 });
 
