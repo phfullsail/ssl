@@ -1,0 +1,87 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #589599;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*content */
+.container {
+	padding-top: 60px;
+}
+
+.modal { 
+	background: rgba(000, 000, 000, 0.8); 
+	min-height:1000000px; 
+}
+
+.container-footer {
+	margin-top: 160px;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+.navbar-brand {
+	position: relative;
+	top: -50px;
+	left: -30px;
+}
+
+#linkLogin {
+	text-decoration: none;
+	color: #589599;
+	float: right;
+}
+
+#linkLogin:hover {
+	text-decoration: underline;
+	color: #938767;
+	float: right;
+}
+
+/* forms */
+
+.form-container {
+	width: 400px;
+}
+
+.form-signin input {
+	background-color: #f6f2e4;
+}
+
+.form-signin input:focus {
+	background-color: #d8e5af;
+}
+
+.form-signin button {
+	background-color: #938767;
+}
+
+.form-signin button:hover {
+	background-color: #b1a890;
+}
+
+.forgotLink {
+	margin-top: 10px;
+}
+
+.forgotLink a {
+	color: #fff;
+}
+
+.forgotLink a:active {
+	color: #fff;
+}
+
+/* Index */
+
+.call-to-action {
+	border: 2px solid #000;
+	background-color: #fff;
+	width: 100%;
+	height: 250px;
+	padding: 10px;
+}
