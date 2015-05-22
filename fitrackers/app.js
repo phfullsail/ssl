@@ -1,38 +1,34 @@
-var express = require('express')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+var express = require('express')    
+var app = express();
+//var port = port.env.PORT || 3000;
+
+var mongoose = require('mongoose');
+var passport = require('passport');
+var flash = require('connect-flash');
+var LocalStrategy = require('passport-local').Strategy;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
  // , hash = require('./pass').hash;   
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
+
+//var configDB = require('./data.json');
+//var configDB = require('./config/database.js');
+
+// configuration ===============================================================
+//mongoose.connect(configDB.url); // connect to our database
+
+// require('./config/passport')(passport); // pass passport for configuration
+
 
 var routes = require('./routes/index');
-//var users = require('./routes/users');
-
-var knex = require('knex')({
-  client: 'mysql',
-  connection: {
-    host     : 'localhost',
-    user     : 'root',
-    password : 'root',
-    database : 'trackers',
-    charset  : 'utf8'
-  },
-  pool: {
-    min: 0,
-    max: 7
-  }
-});
-
-var bookshelf = require('bookshelf')(knex);
-
-var User = bookshelf.Model.extend({
-  tableName: 'users'
-});
+//var users = require('./routes/user
 
 
 
 
-var app = express();
+
 
 app.locals.pagetitle = "Fit Tracker";
 
@@ -55,8 +51,23 @@ app.use('/ratetrackers', routes);
 app.use('/reportissue', routes);
 app.use('/about', routes);
 app.use('/contact', routes);
-app.use('/login', routes);
+//app.use('/login', routes);
 //app.use('/users', users);
+
+app.get('/login', loginGet);
+
+function loginGet(req, res){
+  if(req.user){
+    // already logged in
+    res.redirect('/');
+  } else {
+    // not logged in, show the login form, remember to pass the message
+    // for displaying when error happens
+    res.render('login', { message: req.session.messages });
+    // and then remember to clear the message
+    req.session.messages = null;
+  }
+}
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

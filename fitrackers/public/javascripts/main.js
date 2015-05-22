@@ -44,10 +44,14 @@
 $("#btnSignin").click(function() {
 //		if( document.getElementById('inputEmail').value != '' && document.getElementById('inputPassword').value != '' ){
 
-	        location.href = "/home";
+	   //     location.href = "/home";
 //	    }
 
-		console.log(users);
+	
     });
+
+$("#linkSignin").click(function() {
+	console.warn(users);
+});
 
 })(jQuery);
