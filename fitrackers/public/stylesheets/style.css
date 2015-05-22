@@ -108,9 +108,21 @@ a {
 /* Index */
 
 .call-to-action {
-	border: 2px solid #000;
-	background-color: #fff;
-	width: 100%;
+	border: 2px solid #faefcc;
+	background: #000 url("/images/cta.jpg") no-repeat 0 0 ;
+	width: 1124px;
 	height: 250px;
-	padding: 10px;
+}
+
+.call-to-action button {
+	margin-top: 100px;
+	margin-left: 875px;
+}
+
+.btn-success {
+	height: 50px;
+	width: 150px;
+	border: 1px solid #938767;
+	border-radius: 6px;
+	font-size: 18px;
 }

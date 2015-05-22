@@ -117,7 +117,8 @@
         "heartMonitor": "no",
         "issueid": null,
         "ratingid": "3.5",
-        "price": "50"
+        "price": "50",
+        "images": ["misfit-inline.jpg", "misfit.jpg", "MisfitFlash1.jpg"]
     },
         {
         "deviceid": "7",
@@ -131,7 +132,8 @@
         "heartMonitor": "yes",
         "issueid": null,
         "ratingid": "3.5",
-        "price": "31.38"
+        "price": "31.38",
+        "images": ["pivotal-tracker.jpg", "pivotal-tracker2.jpg", "pivotal-tracker3.jpg"]
     }
 ],
 
