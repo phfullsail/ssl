@@ -36,8 +36,10 @@ var appdata = require('../data.json');
 router.get('/', function(req, res, next) {
   var featured = appdata.featured[0].name;
   var imageMain = "/images/" + appdata.featured[0].images[1];
-  var imageSecondary = appdata.featured[0].images[1];
+  var imageSecondary = "/images/" + appdata.featured[0].images[2];
   var featuredDesc = appdata.featured[0].description;
+  var featuredDesc2 = appdata.featured[0].additional;
+  var source = appdata.featured[0].source;
   
   res.render('index', { 
   	title: 'Fit Tracker Optimizer',
@@ -45,7 +47,9 @@ router.get('/', function(req, res, next) {
     device: featured,
     imageMain: imageMain,
     imageSecondary: imageSecondary,
-    description: featuredDesc  });
+    description: featuredDesc,
+    description2: featuredDesc2,
+    source: source  });
 });
 
 router.get('/forgot', function(req, res, next) {

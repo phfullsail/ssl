@@ -13,7 +13,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><img src="/images/fitlogo.jpg" width="200px" height="78px" alt="Fit Tracker Logo" /></a>
+	          <a class="navbar-brand" href="#"><img src="/images/fit_logo.png" width="399px" height="125px" alt="Fit Tracker Logo" /></a>
 	        </div>
 	        <div id="navbar" class="collapse navbar-collapse">
 	          <ul class="nav navbar-nav navbar-right">
@@ -119,9 +119,14 @@
 	      	</div>
 
 	      	<div id="featuredBg">
-	      		<h2>Featured Device</h2>
-	      		<div id="featureDesc" class="feature-content"><p><%= description %></p></div>
-	      		<div id="featureImage"><img src="<%= imageMain %>" alt="Fit Bit HR" /></div>
+	      		<h2>Featured Device - <strong><%= device %></strong></h2>
+	      		<div id="featureDesc" class="feature-content">
+	      			<p><%= description %></p>
+	      			<p><%= description2 %></p>
+	      			<p><a href="<%= source %>" target="_blank">Source</a></p>
+	      			<img src="<%= imageMain %>" alt="Fit Bit HR" width="500px" height="174px"/>
+	      		</div>
+	      		<div id="featureImage"><img src="<%= imageSecondary %>" alt="Fit Bit HR" height="478px" width="200px"/></div>
 	      		<div class="clear"></div>
 	      	</div>
 

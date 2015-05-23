@@ -26,8 +26,14 @@ a {
 
 .navbar-brand {
 	position: relative;
-	top: -50px;
+	top: -80px;
 	left: -30px;
+}
+
+#mainContent h1 {
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: 2px 2px #3d4c53;
+	text-align: center;
 }
 
 #linkLogin {
@@ -47,8 +53,12 @@ a {
 }
 
 .navbar ul li {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
+}
+
+.navbar ul li:hover {
+	text-decoration: underline;
 }
 
 /* forms */
@@ -145,7 +155,7 @@ a {
 #featuredBg {
 	background-color: #fff;
 	width: 1124px;
-	height: 400px;
+	height: 560px;
 	margin-top: 20px;
 	margin-right: 10px;
 	color: #3d4c53;
@@ -159,7 +169,7 @@ a {
 	}
 
 #featureDesc {
-	width: 400px;
+	width: 700px;
 	height: 300px;
 	padding: 20px;
 	margin-top: 10px;
@@ -167,10 +177,20 @@ a {
 	font-size: 18px;
 }
 
+#featureDesc img {
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
 #featureImage {
 	float: right;
 	padding: 40px;
-	margin-top: 40px;s
+	margin-right: 40px;
+	margin-top: -70px;
+}
+
+#featureImage img {
+	border: 3px solid #f2da8f;
 }
 
 .clear {
