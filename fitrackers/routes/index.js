@@ -34,9 +34,18 @@ var appdata = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  var featured = appdata.featured[0].name;
+  var imageMain = "/images/" + appdata.featured[0].images[1];
+  var imageSecondary = appdata.featured[0].images[1];
+  var featuredDesc = appdata.featured[0].description;
+  
   res.render('index', { 
   	title: 'Fit Tracker Optimizer',
-  	classname: 'index' });
+  	classname: 'index',
+    device: featured,
+    imageMain: imageMain,
+    imageSecondary: imageSecondary,
+    description: featuredDesc  });
 });
 
 router.get('/forgot', function(req, res, next) {
@@ -58,8 +67,7 @@ appdata.users.forEach(function(item) {
 
   res.render('login', { 
   	title: 'Fit Tracker Optimizer Sign In',
-  	classname: 'login',
-    message: req.flash('loginMessage')});
+  	classname: 'login'});
 });
 
 /*passport.authenticate('local', { failureFlash: 'Invalid username or password.' });
@@ -79,6 +87,7 @@ router.get('/signup', function(req, res, next) {
 });
 
 router.get('/home', isLoggedIn, function(req, res, next) {
+
   res.render('home', { 
   	title: 'Fit Tracker Optimizer',
   	classname: 'home'});

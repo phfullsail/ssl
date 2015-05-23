@@ -190,7 +190,8 @@
 "featured" : [
     {
         "name": "Fit Bit HR",
-        "description": "The Fitbit Charge HR offers the best combination of features for the least amount of compromise. For $150, you get an accurate, comfortable, and full-featured activity tracker, along with a standout app—one that’s both simple to use and motivating—for getting visual feedback about your daily movement. It’s the fitness tracker most people will be happiest with."
+        "description": "The Fitbit Charge HR offers the best combination of features for the least amount of compromise. For $150, you get an accurate, comfortable, and full-featured activity tracker, along with a standout app—one that’s both simple to use and motivating—for getting visual feedback about your daily movement. It’s the fitness tracker most people will be happiest with.",
+        "images": ["fitbits.jpg", "Fitbit-HR.jpg", "charge-hr-box.jpg"]
 }
 
 ]
