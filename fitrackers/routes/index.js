@@ -121,10 +121,23 @@ router.get('/toprated', function(req, res, next) {
   	classname: 'toprated' });
 });
 
+
 router.get('/alltrackers', function(req, res, next) {
+   var device = [];
+  var devices = [];
+
+  users = appdata.devices;
+
+
+ appdata.devices.forEach(function(item) {
+  device = device.concat(item.device);
+  });
+
   res.render('alltrackers', { 
   	title: 'Fit Tracker All Trackers',
-  	classname: 'alltrackers' });
+  	classname: 'alltrackers',
+    devices: devices,
+    device: device });
 });
 
 router.get('/addtrackers', function(req, res, next) {

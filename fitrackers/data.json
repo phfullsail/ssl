@@ -1,5 +1,5 @@
 {
-  "Devices": [
+  "devices": [
     {
         "deviceid": "1",
         "deviceName": "FITBIT CHARGE HR",
@@ -16,6 +16,7 @@
         "issueid": null,
         "ratingid": "5",
         "price": "130",
+        "imgname":"charge.jpg",
         "images": ["fitbithr.png", "fitbithr2.png", "fitbit_rash.jpg"]
     },
     {
@@ -34,6 +35,7 @@
         "issueid": null,
         "ratingid": "0",
         "price": "43",
+        "imgname":"jawbone.jpg",
         "images": ["jawbone-move.jpg", "Jawbone-Up-Move.jpg", "Jawbone-up-move2.jpg"]
     },
     {
@@ -52,6 +54,7 @@
         "issueid": null,
         "ratingid": "0",
         "price": "270",
+        "imgname":"tomtom.jpg",
         "images": ["tom_tom.png", "tom_tom2.png", "tom-tom-cardio.jpg", "TomTomRunner-MultiSport.jpg"]
     },
     {
@@ -82,6 +85,7 @@
         "issueid": null,
         "ratingid": "0",
         "price": "0",
+        "imgname":"surge.jpg",
         "images": ["fibit_surge.png", "fitbit_surge_1.jpg", "Garmin.jpg"]
     },
         {
@@ -100,6 +104,7 @@
         "issueid": null,
         "ratingid": "3.5",
         "price": "130",
+        "imgname":"jawboneup.jpg",
         "images": ["jawbone-up.jpg", "jawbone-up2.jpg", "jawbone-up3.jpg", "jawbone-up4.jpg"]
     },
         {
@@ -118,6 +123,7 @@
         "issueid": null,
         "ratingid": "3.5",
         "price": "50",
+        "imgname":"misfit.jpg",
         "images": ["misfit-inline.jpg", "misfit.jpg", "MisfitFlash1.jpg"]
     },
         {
@@ -133,6 +139,7 @@
         "issueid": null,
         "ratingid": "3.5",
         "price": "31.38",
+        "imgname":"pivitol.jpg",
         "images": ["pivotal-tracker.jpg", "pivotal-tracker2.jpg", "pivotal-tracker3.jpg"]
     }
 ],
@@ -179,12 +186,9 @@
     },
       {
        "issueid": "4",
-        "issue": "rashes"
-    },
-      {
-       "issueid": "5",
-        "issue": "app crashes"
+        "issue": "skin rashes"
     }
+     
 ],
     
 "featured" : [
