@@ -90,11 +90,18 @@ router.get('/signup', function(req, res, next) {
     message: req.flash('signupMessage') });
 });
 
-router.get('/home', isLoggedIn, function(req, res, next) {
+/*router.get('/home', isLoggedIn, function(req, res, next) {
 
   res.render('home', { 
   	title: 'Fit Tracker Optimizer',
   	classname: 'home'});
+});*/
+
+router.get('/home', function(req, res, next) {
+
+  res.render('home', { 
+    title: 'Fit Tracker Optimizer',
+    classname: 'home'});
 });
 
 router.get('/toprated', function(req, res, next) {

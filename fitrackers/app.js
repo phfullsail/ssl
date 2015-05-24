@@ -51,6 +51,7 @@ app.use('/ratetrackers', routes);
 app.use('/reportissue', routes);
 app.use('/about', routes);
 app.use('/contact', routes);
+app.use('/home', routes);
 //app.use('/login', routes);
 //app.use('/users', users);
 

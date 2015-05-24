@@ -197,3 +197,14 @@ a {
 	clear: all;
 }
 
+#aboutContent {
+	padding: 40px;
+	font-size: 18px;
+	color: #3d4c53;
+}
+
+#footerContent {
+	color: #fff;
+	text-align: center;
+}
+

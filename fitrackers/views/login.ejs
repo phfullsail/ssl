@@ -5,7 +5,8 @@
   <body class="<%= classname %>">
   	<% include partials/page/header.ejs %>
   	<div class="container form-container">
-	  <form class="form-signin" action="/login" method="post"> 
+	<!--  <form class="form-signin" action="/login" method="post"> -->
+  <form class="form-signin" > 
    <div><% include partials/users.ejs %></div>
       <div class="formBg">
          <div class="formLogo"><img src="/images/fit_logo_sm.png" width="250px" height="78px" alt="Fit Tracker Logo" /></div>
@@ -15,7 +16,7 @@
           <label for="inputPassword" class="sr-only">Password</label>
           <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
          
-          <button id="btnSignin" class="btn btn-lg btn-block" type="submit">Sign in</button>
+          <button id="btnSignin" class="btn btn-lg btn-block" type="submit"><a href="/home">Sign in</a></button>
         </div>
       </form>
       <div class="forgotLink">
