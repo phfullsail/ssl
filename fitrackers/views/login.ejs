@@ -50,7 +50,6 @@
         for(var i = 0; i<users.length; i++){
 
             if (users[i].username == username && users[i].password == password){
-         // if ( username == "test" && password == "test"){
               $("#validError").removeClass("show-error");
               $("#validError").addClass("hide-error");
               document.getElementById("username").value = '';
@@ -84,7 +83,7 @@
         </div>
       </form>
       <div class="forgotLink">
-      	<a href="/forgot">Forgot Password</a>
+      	<strong><a href="/forgot">Forgot Password?</a></strong>
  		</div>
       </div>
 	 	<div id="footer">
