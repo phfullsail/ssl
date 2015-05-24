@@ -116,9 +116,21 @@ router.get('/home', function(req, res, next) {
 });
 
 router.get('/toprated', function(req, res, next) {
+   var device = [];
+  var devices = [];
+
+  devices = appdata.top;
+
+
+ appdata.top.forEach(function(item) {
+  device = device.concat(item.device);
+  });
+
   res.render('toprated', { 
   	title: 'Fit Tracker Top Rated',
-  	classname: 'toprated' });
+  	classname: 'toprated',
+    devices: devices,
+    device: device });
 });
 
 

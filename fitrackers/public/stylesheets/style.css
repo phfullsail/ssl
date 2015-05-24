@@ -69,6 +69,17 @@ a {
 	border-left: 1px solid #938767;
 }
 
+select {
+	width: 200px;
+	border-radius: 4px;
+	border: 2px solid #685e45;
+	height: 30px;
+}
+
+.content-spacing{
+	padding: 40px;
+}
+
 /* forms */
 
 .form-container {

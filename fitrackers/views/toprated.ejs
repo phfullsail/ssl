@@ -31,8 +31,37 @@
 	    </nav>
 	  	<div id="mainContent" class="container">
 		    <h1><%= title %></h1>
-			<div id="featuredBg">
+			<div id="featuredBg-trackers">
+				<div id="allTrackersContent" class="content-spacing">
+					
+					 <% devices.forEach(function(item) { %>
+					 <div>
+					 	<p><span class="tracker-label">Device Name: </span><span class="tracker-data"><%= item.deviceName %></span></p>
+					 	<p><span class="tracker-label">Description: </span><%= item.description %></p>
+					 	<p><span class="tracker-label">Known Issues: </span>
+							<% if (typeof(item.issues) !== ''){ %>
 
+							<span>
+								<% for(var i=0; i<item.issues.length; i++) {%>
+									<span> <%= item.issues[i] %>,</span>
+
+									<% } %>
+							</span>
+							<% } %>
+	
+					 	</p>
+					 	<p><span class="tracker-label">Rating: </span><%= item.ratingid %> stars</p>
+        				<p><span class="tracker-label">Price: </span><span>$<%= item.price %></span></p>
+        				<p><span class="tracker-label">Features: </span> <span>Gps - </span><span><%= item.gps %></span>, 
+        				<span>Water Resistance - </span><span><%= item.waterResistance %></span>,
+        				<span>Heart Rate Monitor - </span><span><%= item.heartMonitor %></span>,
+        				<span>Sleep Monitor - </span><span><%= item.sleepMonitor %></span></p>
+        				<div><img src="/images/devices/<%= item.imgname %>"  /></div>
+        				<hr>
+    				</div>	 
+			<% }); %>
+
+			</div>
 			</div>
 	    </div>
 	 	<div id="footer">
