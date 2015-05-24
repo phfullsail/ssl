@@ -86,24 +86,32 @@ select {
 	width: 400px;
 }
 
-.formSignin input,
+.formSignin input[type="text"],
+.formSignin input[type="password"],
 .form-signup input,
 .form-forgot input {
 	/*background-color: #f6f2e4;*/
 	margin-bottom: 5px;
 }
 
-.formSignin input:focus,
+.formSignin input[type="text"]:focus,
+.formSignin input[type="password"]:focus,
 .form-forgot input:focus {
 	background-color: #d8e5af;
 }
 
-.formSignin button,
+.formSignin input[type="button"],
 .form-forgot button {
 	background-color: #938767;
 }
 
-.formSignin button:hover,
+.formSignin input[type="button"]{
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+}
+
+.formSignin input[type="button"]:hover,
 .form-forgot button:hover {
 	background-color: #b1a890;
 }
