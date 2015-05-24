@@ -1,5 +1,7 @@
 (function($) {  
 
+
+
  $("#linkHome").click(function() {
  	//$('#linkHome').removeClass('inactive');
 	$('#linkHome').addClass('active');
@@ -50,8 +52,6 @@ $("#btnSignin").click(function() {
 	
     });
 
-$("#linkSignin").click(function() {
-	console.warn(users);
-});
+
 
 })(jQuery);

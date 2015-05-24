@@ -48,10 +48,10 @@ app.use('/reportissue', routes);
 app.use('/about', routes);
 app.use('/contact', routes);
 app.use('/home', routes);
-//app.use('/login', routes);
+app.use('/login', routes);
 //app.use('/users', users);
 
-app.get('/login', loginGet);
+/*app.get('/login', loginGet);
 
 function loginGet(req, res){
   if(req.user){
@@ -71,7 +71,7 @@ app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
-});
+});*/
 
 // error handlers
 
