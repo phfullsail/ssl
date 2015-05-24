@@ -126,7 +126,7 @@ router.get('/alltrackers', function(req, res, next) {
    var device = [];
   var devices = [];
 
-  users = appdata.devices;
+  devices = appdata.devices;
 
 
  appdata.devices.forEach(function(item) {
