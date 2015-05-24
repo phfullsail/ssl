@@ -98,10 +98,21 @@ router.get('/signup', function(req, res, next) {
 });*/
 
 router.get('/home', function(req, res, next) {
-
+    var featured = appdata.featured[0].name;
+    var imageMain = "/images/" + appdata.featured[0].images[1];
+    var imageSecondary = "/images/" + appdata.featured[0].images[2];
+    var featuredDesc = appdata.featured[0].description;
+    var featuredDesc2 = appdata.featured[0].additional;
+    var source = appdata.featured[0].source;
   res.render('home', { 
     title: 'Fit Tracker Optimizer',
-    classname: 'home'});
+    classname: 'home',
+    device: featured,
+    imageMain: imageMain,
+    imageSecondary: imageSecondary,
+    description: featuredDesc,
+    description2: featuredDesc2,
+    source: source});
 });
 
 router.get('/toprated', function(req, res, next) {

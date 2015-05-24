@@ -55,10 +55,18 @@ a {
 .navbar ul li {
 	font-size: 16px;
 	font-weight: bold;
+	color: #589599;
 }
 
-.navbar ul li:hover {
-	text-decoration: underline;
+.navbar ul li a:hover {
+	color: #589599;
+}
+
+.active-link {
+	background-color: #faefcc;
+	border-top: 1px solid #938767;
+	border-right: 1px solid #938767;
+	border-left: 1px solid #938767;
 }
 
 /* forms */
@@ -118,6 +126,19 @@ a {
 	background-color: #fbfbfb;
 	padding: 20px;
 	border: 1px solid #685e45;
+}
+
+.navbar-inverse {
+	background-color: #938767;
+}
+
+.nav li a .active-link {
+	background-color: #f2da8f;
+}
+
+.page-content {
+	padding: 40px;
+
 }
 
 /* Index */

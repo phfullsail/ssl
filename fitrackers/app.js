@@ -26,10 +26,6 @@ var routes = require('./routes/index');
 //var users = require('./routes/user
 
 
-
-
-
-
 app.locals.pagetitle = "Fit Tracker";
 
 // view engine setup
