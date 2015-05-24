@@ -2,8 +2,8 @@
   "devices": [
     {
         "deviceid": "1",
-        "deviceName": "FITBIT CHARGE HR",
-        "description": "Get motivated to move more with Charge, by tracking all-day activity like steps taken, distance traveled, calories burned, floors climbed and active minutes.",
+        "deviceName": "Fitbit Charge HR",
+        "description": "Get motivated to move more with the Fitbit Charge HR, by tracking all-day activity like steps taken, distance traveled, calories burned, floors climbed and active minutes.",
         "waterResistance": "SPLASH-PROOF",
         "gps": "NO",
         "steps": "yes",
@@ -83,8 +83,8 @@
         "sleepMonitor": "yes",
         "heartMonitor": "yes",
         "issueid": null,
-        "ratingid": "0",
-        "price": "0",
+        "ratingid": "4",
+        "price": "249",
         "imgname":"surge.jpg",
         "images": ["fibit_surge.png", "fitbit_surge_1.jpg", "Garmin.jpg"]
     },

@@ -31,7 +31,7 @@
 	    </nav>
 	  <div id="mainContent" class="container">
 		    <h1><%= title %></h1>
-			<div id="featuredBg" class="page-content">
+			<div id="featuredBg-trackers" class="page-content">
 				<h4>Filter Results By:</h4>
 				<div id="filters">
 
@@ -69,12 +69,16 @@
 
 				</div>
 		
-				<div>
+				<div id="allTrackersContent">
 				
 					 <% devices.forEach(function(item) { %>
-        				<p>
-          				<%= item.price %> 
-          			</p>	 
+					 <div>
+					 	<p><span class="tracker-label">Device Name: </span><span class="tracker-data"><%= item.deviceName %></span></p>
+					 	<p><span class="tracker-label">Description: </span><%= item.description %></p>
+					 	<p><span class="tracker-label">Rating: </span><%= item.ratingid %> stars</p>
+        				<p><span class="tracker-label">Price: </span><span>$<%= item.price %></span></p>
+        				<hr>
+    				</div>	 
 			<% }); %>
 
 			</div>
