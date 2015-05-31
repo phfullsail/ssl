@@ -1,8 +1,80 @@
 (function($) {  
 
+	     function submitForm()  {
+                  var formData = JSON.stringify($("#local-sign-in").serializeArray());
+                  $.ajax({
+                    type: "POST",
+                    url: "localhost:3000",
+                    data: data,
+                    success: function(){},
+                    dataType: "json",
+                    contentType : "application/json"
+                  });
+                };
+
+			$("#buttonSignUp").click(function() {
+				location.href = "/signup";
+			})
+
+			$("#buttonRegister").click(function() {
+				 // Use AJAX to post the object to our adduser service
+		/*		  var newUser = {
+            'username': $('#addUser fieldset input#inputUserName').val(),
+            'email': $('#addUser fieldset input#inputUserEmail').val(),
+            'fullname': $('#addUser fieldset input#inputUserFullname').val(),
+            'age': $('#addUser fieldset input#inputUserAge').val(),
+            'location': $('#addUser fieldset input#inputUserLocation').val(),
+            'gender': $('#addUser fieldset input#inputUserGender').val()
+        }*/
 
 
- $("#linkHome").click(function() {
+
+        		var newUser = {
+        			'fname': $("#inputRegisterFname").val(),
+        			'lname': $("#inputRegisterLname").val(),
+        			'username': $("#inputRegisterUsername").val(),
+        			'password': $("#inputRegisterPassword").val(),
+        			'email': $("#inputRegisterEmail").val()
+        		}
+
+		       var request = $.ajax({
+		       		url: 'http://localhost:3000/signup',
+		       		async: false,
+		            type: 'POST',
+		            data: newUser,
+		          	contentType: "application/x-www-form-urlencoded",
+		            dataType: 'json'
+		            
+		        });
+
+		       request.success(function(result) {
+
+            console.log(result);
+
+        });
+
+        request.fail(function(jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        });
+		
+    });
+/*$.ajax({
+        url: 'http://localhost:3000',
+        dataType: "json",
+        jsonpCallback: "data",
+        cache: false,
+        timeout: 5000,
+        success: function(data) {
+          //  $("#test").append(data);
+          alert('success');
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('error');
+        }
+    });*/
+
+
+/* $("#linkHome").click(function() {
  	//$('#linkHome').removeClass('inactive');
 	$('#linkHome').addClass('active');
  	});
@@ -50,7 +122,7 @@ $("#btnSignin").click(function() {
 //	    }
 
 	
-    });
+    });*/
 
 
 

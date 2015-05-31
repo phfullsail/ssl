@@ -100,18 +100,18 @@ select {
 	background-color: #d8e5af;
 }
 
-.formSignin input[type="button"],
+.formSignin input[type="submit"],
 .form-forgot button {
 	background-color: #938767;
 }
 
-.formSignin input[type="button"]{
+.formSignin input[type="submit"]{
 	width: 100%;
 	height: 50px;
 	border-radius: 8px;
 }
 
-.formSignin input[type="button"]:hover,
+.formSignin input[type="submit"]:hover,
 .form-forgot button:hover {
 	background-color: #b1a890;
 }

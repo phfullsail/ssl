@@ -7,7 +7,7 @@
                 var config = {
                     user: 'test',
                     password: '11111',
-                    server: 'ICEFOX-PC\\SQLSQL',
+                    server: 'localhost:3000',
                     database: 'trackers'
                 }
                 sql.connect(config, function(err) {

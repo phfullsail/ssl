@@ -208,15 +208,15 @@
         "fname": "pamela",
         "lname": "holmes",
         "username": "pholmes",
-        "password": "testpw",
+        "password": "test",
         "email": "phfullsail@fullsail.edu"
     },
     {
         "userid": "3",
         "fname": "mickey",
         "lname": "mouse",
-        "username": "mmouse",
-        "password": "mmouse",
+        "username": "mouse",
+        "password": "test",
         "email": "mmouse@disney.com"
     },
     {
