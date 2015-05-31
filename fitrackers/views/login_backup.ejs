@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head><% include partials/page/head.ejs %></head>
+ 
+  <body class="<%= classname %>">
+  	<% include partials/page/header.ejs %>
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+
+     window.addEventListener('load', function(){
+
+        document.getElementById("username").value = '';
+        document.getElementById("password").value = '';
+       
+       });
+
+
+    /*   submitForm = function()  {
+          var formData = JSON.stringify($("#local-sign-in").serializeArray());
+          $.ajax({
+          type: "POST",
+          url: "localhost:3000",
+          data: "data",
+          success: function(){},
+          dataType: "json",
+          contentType : "application/json"
+        });
+        }
+*/
+
+     /*var user,pass;
+        $("#submit").click(function(){
+          user=$("#username").val();
+          pass=$("#password").val();
+          if (user != '' && pass != ''){
+          $.post("http://localhost:3000/login",{username: user,password: pass}, function(data){
+            console.log('here')
+            if(data==='done')
+              {
+                alert("login success");
+                $("#validError").removeClass("show-error");
+              $("#validError").addClass("hide-error");
+              }
+          });
+        } else {
+          $("#validError").removeClass("hide-error");
+              $("#validError").addClass("show-error");
+        }
+        });*/
+      /*  var users =  [
+                    {
+                        "userid": "1",
+                        "fname": "pamela",
+                        "lname": "holmes",
+                        "username": "pholmes",
+                        "password": "testpw",
+                        "email": "phfullsail@fullsail.edu"
+                    },
+                    {
+                        "userid": "3",
+                        "fname": "mickey",
+                        "lname": "mouse",
+                        "username": "mmouse",
+                        "password": "mmouse",
+                        "email": "mmouse@disney.com"
+                    },
+                    {
+                        "userid": "4",
+                        "fname": "test",
+                        "lname": "test",
+                        "username": "test",
+                        "password": "password",
+                        "email": "test@test.com"
+                    }
+                ];*/
+
+      
+   //    function validateForm(){
+     /*   var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        
+        var usersData = $("#usersContent").html(); 
+        //var users = [];
+       // users.push(<%= users %>);
+       // console.log(usersData[0].username);
+        for(var i = 0; i<users.length; i++){
+
+            if (users[i].username == username && users[i].password == password){
+              $("#validError").removeClass("show-error");
+              $("#validError").addClass("hide-error");
+              document.getElementById("username").value = '';
+              document.getElementById("password").value = '';
+              location.href = "/home";
+            return false;
+            }
+            else{
+              $("#validError").removeClass("hide-error");
+              $("#validError").addClass("show-error");
+          }
+        }*/
+ //     };
+ });
+  </script>
+
+  	<div class="container form-container">
+
+      <form action="/login" method="post" class="formSignin" >
+        <div class="formBg">
+        <div class="formLogo"><img src="/images/fit_logo_sm.png" width="250px" height="78px" alt="Fit Tracker Logo" /></div>
+         <h2 class="form-signin-heading">Sign In</h2>
+          <div>
+              <label>Username:</label>
+              <input id="username" type="text" name="username" class="form-control" required/>
+          </div>
+          <div>
+              <label>Password:</label>
+              <input id="password" type="password" name="password" class="form-control" required/>
+          </div>
+          <div>
+              <input type="submit" value="Log In"/>
+          </div>
+        </div>
+      </form>
+
+
+    <div class="forgotLink">
+      	<strong><a href="/forgot">Forgot Password?</a></strong>
+ 		</div>
+      </div>
+	 	<div id="footer">
+	   <% include partials/page/footer.ejs %>
+	   </div>
+	 <% include partials/page/jsdefaults.ejs %>
+  </body>
+</html>

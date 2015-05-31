@@ -4,22 +4,67 @@
  
   <body class="<%= classname %>">
   	<% include partials/page/header.ejs %>
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+
+     window.addEventListener('load', function(){
+      
+
+     //   document.getElementById("username").value = '';
+      //  document.getElementById("password").value = '';
+       
+       });
+
+   /*     $("#submit").click(function(){
+           user=$("#username").val();
+          pass=$("#password").val();
+          if (user != '' && pass != ''){
+          $.post("http://localhost:3000/login",{username: user,password: pass}, function(data){
+            alert('this here')
+            if(data==='done')
+              {
+                alert("login success");
+                $("#validError").removeClass("show-error");
+              $("#validError").addClass("hide-error");
+              }
+          });
+        } else {
+          alert('here');
+          $("#validError").removeClass("hide-error");
+              $("#validError").addClass("show-error");
+        }
+        });*/
+   
+ });
+  </script>
+
   	<div class="container form-container">
-	  <form class="form-signin" action="/login" method="post"> 
-   <!-- <div><% include partials/users.ejs %></div>-->
-      <div class="formBg">
-         <div class="formLogo"><img src="/images/fitlogo.jpg" width="200px" height="78px" alt="Fit Tracker Logo" /></div>
+    <% if (message) { %>
+      <p><%= message %></p>
+    <% } %>
+      <form action="/login" method="post" class="formSignin" name="formSignin">
+        <div class="formBg">
+        <div class="formLogo"><img src="/images/fit_logo_sm.png" width="250px" height="78px" alt="Fit Tracker Logo" /></div>
          <h2 class="form-signin-heading">Sign In</h2>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
-         
-          <button id="btnSignin" class="btn btn-lg btn-block" type="submit">Sign in</button>
+          <div>
+              <label>Username:</label>
+              <input id="username" type="text" name="username" class="form-control" required/>
+          </div>
+          <div>
+              <label>Password:</label>
+              <input id="password" type="password" name="password" class="form-control" required/>
+          </div>
+          <div>
+              <input type="submit" value="Log In" id="submit"/>
+          </div>
         </div>
+        <div id="validError" class="error-text <%= showclass %>">Invalid username/password. Please try again.</div>
       </form>
-      <div class="forgotLink">
-      	<a href="/forgot">Forgot Password</a>
+        <div>*hint username: admin - password: password</div>
+
+    <div class="forgotLink">
+      	<strong><a href="/forgot">Forgot Password?</a></strong>
  		</div>
       </div>
 	 	<div id="footer">

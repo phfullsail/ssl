@@ -1,90 +1,99 @@
 {
-  "Devices": [
+  "devices": [
     {
         "deviceid": "1",
-        "deviceName": "FITBIT CHARGE HR",
-        "description": "Get motivated to move more with Charge, by tracking all-day activity like steps taken, distance traveled, calories burned, floors climbed and active minutes.",
-        "waterResistance": "SPLASH-PROOF",
-        "gps": "NO",
-        "steps": "yes",
+        "deviceName": "Fitbit Charge HR",
+        "description": "Get motivated to move more with the Fitbit Charge HR, by tracking all-day activity like steps taken, distance traveled, calories burned, floors climbed and active minutes.",
+        "waterResistance": "Splash-Proof",
+        "gps": "No",
+        "steps": "Yes",
         "calories": "yes",
         "distance": "yes",
-        "callerId": "YES",
-        "statsOnScreen": "YES",
-        "sleepMonitor": "YES",
-        "heartMonitor": "YES",
-        "issueid": null,
-        "ratingid": "2",
+        "callerId": "yes",
+        "statsOnScreen": "yes",
+        "sleepMonitor": "Yes",
+        "heartMonitor": "Yes",
+        "issues": ["skin rashes","syncing issues"],
+        "ratingid": "5",
         "price": "130",
-        "images": ["Lorenzo_Garcia_01_tn.jpg", "Lorenzo_Garcia_02_tn.jpg", "Lorenzo_Garcia_03_tn.jpg", "Lorenzo_Garcia_04_tn.jpg"]
+        "imgname":"_thumbcharge.jpg",
+        "images": ["fitbithr.png", "fitbithr2.png", "fitbit_rash.jpg"]
     },
     {
         "deviceid": "3",
         "deviceName": "Jawbone Up Move",
         "description": "This discreet, modern device has a nearly invisible LED display and accurately monitors steps, calories and sleep. It also connects to the new Smart Coach feature in the Up app, learns from your activity and habits, and provides advice on how to be healthier each day.",
-        "waterResistance": "SPLASH-PROOF",
-        "gps": "NO",
+        "waterResistance": "Splash-Proof",
+        "gps": "No",
         "steps": "yes",
         "calories": "yes",
         "distance": "yes",
         "callerId": "NO",
         "statsOnScreen": null,
-        "sleepMonitor": "YES",
-        "heartMonitor": null,
-        "issueid": null,
+        "sleepMonitor": "Yes",
+        "heartMonitor": "No",
+        "issues": ["syncing issues"],
         "ratingid": "0",
-        "price": "43"
+        "price": "43",
+        "imgname":"_thumbjawbone.jpg",
+        "images": ["jawbone-move.jpg", "Jawbone-Up-Move.jpg", "Jawbone-up-move2.jpg"]
     },
     {
         "deviceid": "4",
         "deviceName": "TomTom Runner Cardio",
         "description": "Can track your heart rate zones for a more efficient workout, plot your runs on a map and record your altitude, pace and lap times. Android and iOS apps also let you upload your data to the cloud on the fly. ",
         "waterResistance": "Swim-proof",
-        "gps": "YES",
+        "gps": "Yes",
         "steps": "yes",
         "calories": "yes",
         "distance": "yes",
         "callerId": null,
         "statsOnScreen": "YES",
-        "sleepMonitor": "YES",
-        "heartMonitor": "YES",
-        "issueid": null,
+        "sleepMonitor": "Yes",
+        "heartMonitor": "Yes",
+        "issues": ["syncing issues"],
         "ratingid": "0",
-        "price": "270"
+        "price": "270",
+        "imgname":"_thumbtomtom.jpg",
+        "images": ["tom_tom.png", "tom_tom2.png", "tom-tom-cardio.jpg", "TomTomRunner-MultiSport.jpg"]
     },
     {
         "deviceid": "5",
         "deviceName": "Garmin Vivoactive",
         "description": "It's an all-purpose fitness monitor that also delivers smartphone notifications to your wrist. Its lightweight, comfortable design can be customized to fit your style, with bright, silicon, colored bands or chic, classy leather bands. Plus, you can download watch faces from the Garmin Connect IQ store to personalize your look. ",
         "waterResistance": "Swim-proof",
-        "gps": "YES",
+        "gps": "Yes",
         "callerId": null,
         "statsOnScreen": null,
-        "sleepMonitor": "YES",
-        "heartMonitor": "NO",
-        "issueid": null,
+        "sleepMonitor": "Yes",
+        "heartMonitor": "No",
+        "issues": ["syncing issues"],
         "ratingid": "0",
-        "price": "250"
+        "price": "250",
+        "imgname":"_thumbgarmin.jpg",
+        "images": ["garmin-vivoactive.gif", "garmin-vivoactive.png", "Garmin.jpg"]
     },
     {
         "deviceid": "6",
         "deviceName": "Fitbit Surge",
         "description": "The Fitbit Surge is built for multi-sports. As well as the usual running and cycling, the Surge is also great for the gym, enabling you to track static cardio workouts that are the foil of most movement-based trackers. Not only that, but the full OLED screen will display calls, texts and notifications in full, making this a true fitness super watch.",
-        "waterResistance": "splash-proof",
-        "gps": "yes",
+        "waterResistance": "Splash-Proof",
+        "gps": "Yes",
         "callerId": "yes",
         "statsOnScreen": "yes",
-        "sleepMonitor": "yes",
-        "heartMonitor": "yes",
-        "issueid": null,
-        "ratingid": "0",
-        "price": "0"
+        "sleepMonitor": "Yes",
+        "heartMonitor": "Yes",
+        "issues": ["skin rashes","syncing issues"],
+        "ratingid": "4",
+        "price": "249",
+        "imgname":"_thumbsurge.jpg",
+        "images": ["fibit_surge.png", "fitbit_surge_1.jpg", "Garmin.jpg"]
     },
         {
         "deviceid": "8",
         "deviceName": "Jawbone Up24",
         "description": "The stylish band can track everything you would expect -- steps, distance, calories and sleep -- and a recent software update improved battery life to 14 days. You can set a silent alarm to wake you up in the morning, alerts to remind you to get up and move, and daily activity goals. It's also waterproof, meaning you don't have to take it off before you shower.",
-        "waterResistance": "water-proof",
+        "waterResistance": "Water-Proof",
         "gps": "no",
         "steps": "yes",
         "calories": "yes",
@@ -93,40 +102,103 @@
         "statsOnScreen": "no",
         "sleepMonitor": "yes",
         "heartMonitor": "no",
-        "issueid": null,
+        "issues": ["syncing issues"],
         "ratingid": "3.5",
-        "price": "130"
+        "price": "130",
+        "imgname":"_thumbjawboneup.jpg",
+        "images": ["jawbone-up.jpg", "jawbone-up2.jpg", "jawbone-up3.jpg", "jawbone-up4.jpg"]
     },
         {
         "deviceid": "9",
         "deviceName": "Misfit Flash",
         "description": "This small (and waterproof) device tracks your steps, distance and calories. There is also automatic sleep tracking, and it has a replaceable coin battery that lasts six months. The tracker can be worn on your wrist or your waist with an included clip-on accessory. The mobile app, available for Android, iOS and Windows Phone, also integrates with a variety of other ecosystems, such as RunKeeper, MapMyFitness and MyFitnessPal.",
-        "waterResistance": "splash-proof",
-        "gps": "no",
+        "waterResistance": "Splash-Proof",
+        "gps": "No",
         "steps": "yes",
         "calories": "yes",
         "distance": "yes",
         "callerId": "yes",
         "statsOnScreen": "no",
-        "sleepMonitor": "yes",
-        "heartMonitor": "no",
-        "issueid": null,
+        "sleepMonitor": "Yes",
+        "heartMonitor": "No",
+        "issues": ["syncing issues"],
         "ratingid": "3.5",
-        "price": "50"
+        "price": "50",
+        "imgname":"_thumbmisfit.jpg",
+        "images": ["misfit-inline.jpg", "misfit.jpg", "MisfitFlash1.jpg"]
     },
         {
         "deviceid": "7",
         "deviceName": "Pivotal Tracker",
         "description": "The Pivotal Tracker 1 is incredibly affordable. It can track your daily activities, sleep and even your hydration level. There's a silent alarm for gentle wake ups and inactivity alerts to get you moving.",
-        "waterResistance": "splash-proof",
-        "gps": "no",
+        "waterResistance": "Splash-Proof",
+        "gps": "No",
         "callerId": "yes",
         "statsOnScreen": "yes",
-        "sleepMonitor": "yes",
-        "heartMonitor": "yes",
-        "issueid": null,
+        "sleepMonitor": "Yes",
+        "heartMonitor": "Yes",
+        "issues": ["skin rashes","syncing issues"],
         "ratingid": "3.5",
-        "price": "31.38"
+        "price": "31.38",
+        "imgname":"_thumbpivotal.jpg",
+        "images": ["pivotal-tracker.jpg", "pivotal-tracker2.jpg", "pivotal-tracker3.jpg"]
+    }
+],
+    
+    
+  "top": [
+       {
+        "deviceid": "5",
+        "deviceName": "Garmin Vivoactive",
+        "description": "It's an all-purpose fitness monitor that also delivers smartphone notifications to your wrist. Its lightweight, comfortable design can be customized to fit your style, with bright, silicon, colored bands or chic, classy leather bands. Plus, you can download watch faces from the Garmin Connect IQ store to personalize your look. ",
+        "waterResistance": "Swim-proof",
+        "gps": "Yes",
+        "callerId": null,
+        "statsOnScreen": null,
+        "sleepMonitor": "Yes",
+        "heartMonitor": "No",
+        "issues": ["syncing issues"],
+        "ratingid": "0",
+        "price": "250",
+        "imgname":"_thumbgarmin.jpg",
+        "images": ["garmin-vivoactive.gif", "garmin-vivoactive.png", "Garmin.jpg"]
+    },
+    {
+        "deviceid": "1",
+        "deviceName": "Fitbit Charge HR",
+        "description": "Get motivated to move more with the Fitbit Charge HR, by tracking all-day activity like steps taken, distance traveled, calories burned, floors climbed and active minutes.",
+        "waterResistance": "Splash-Proof",
+        "gps": "No",
+        "steps": "Yes",
+        "calories": "yes",
+        "distance": "yes",
+        "callerId": "yes",
+        "statsOnScreen": "yes",
+        "sleepMonitor": "Yes",
+        "heartMonitor": "Yes",
+        "issues": ["skin rashes","syncing issues"],
+        "ratingid": "5",
+        "price": "130",
+        "imgname":"_thumbcharge.jpg",
+        "images": ["fitbithr.png", "fitbithr2.png", "fitbit_rash.jpg"]
+    },
+   
+   
+    {
+        "deviceid": "6",
+        "deviceName": "Fitbit Surge",
+        "description": "The Fitbit Surge is built for multi-sports. As well as the usual running and cycling, the Surge is also great for the gym, enabling you to track static cardio workouts that are the foil of most movement-based trackers. Not only that, but the full OLED screen will display calls, texts and notifications in full, making this a true fitness super watch.",
+        "waterResistance": "Splash-Proof",
+        "gps": "Yes",
+        "callerId": "yes",
+        "statsOnScreen": "yes",
+        "sleepMonitor": "Yes",
+        "heartMonitor": "Yes",
+        "issues": ["skin rashes","syncing issues"],
+        "ratingid": "4",
+        "price": "249",
+        "imgname":"_thumbsurge.jpg",
+        "images": ["fibit_surge.png", "fitbit_surge_1.jpg", "Garmin.jpg"]
     }
 ],
 
@@ -135,16 +207,16 @@
         "userid": "1",
         "fname": "pamela",
         "lname": "holmes",
-        "username": "pholmes",
-        "password": "testpw",
+        "username": "admin",
+        "password": "password",
         "email": "phfullsail@fullsail.edu"
     },
     {
         "userid": "3",
         "fname": "mickey",
         "lname": "mouse",
-        "username": "mmouse",
-        "password": "mmouse",
+        "username": "username",
+        "password": "password",
         "email": "mmouse@disney.com"
     },
     {
@@ -172,11 +244,19 @@
     },
       {
        "issueid": "4",
-        "issue": "rashes"
-    },
-      {
-       "issueid": "5",
-        "issue": "app crashes"
+        "issue": "skin rashes"
     }
+     
+],
+    
+"featured" : [
+    {
+        "name": "Fit Bit HR",
+        "description": "The Fitbit Charge HR offers the best combination of features for the least amount of compromise. For $150, you get an accurate, comfortable, and full-featured activity tracker, along with a standout app—one that’s both simple to use and motivating—for getting visual feedback about your daily movement. It’s the fitness tracker most people will be happiest with.",
+        "additional":"The Charge HR is available in a range of colours – plum, blue and tangerine; needless to say that none of these variations are available as yet. The screen also matches the colour of the band too, so it doesn't stick out like a sore thumb.",
+        "images": ["fitbits.jpg", "Fitbit-HR.jpg", "charge-hr-box2.jpg"],
+        "source" : "http://www.wareable.com/fitbit/fitbit-charge-hr-review"
+}
+
 ]
 }

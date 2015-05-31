@@ -4,35 +4,84 @@
  
   <body class="<%= classname %>">
   	<% include partials/page/header.ejs %>
+
+	 <script type="text/javascript">
+	     $(document).ready(function(){
+
+		    // window.addEventListener('load', function(){
+	             
+	  		//$("#input-id").rating({
+	  		//	size: 'md'
+	  		//});
+	  	 	
+	  	 //	});
+
+
+ 		});
+  	</script>
+
 	   <nav class="navbar navbar-default navbar-fixed-top">
 	      <div class="container">
 	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	          <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 	            <span class="sr-only">Toggle navigation</span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><img src="/images/fitlogo.jpg" width="200px" height="78px" alt="Fit Tracker Logo" /></a>
+	           <a class="navbar-brand" href="/home"><img src="/images/fit_logo.png" width="399px" height="125px" alt="Fit Tracker Logo" /></a>
 	        </div>
 	        <div id="navbar" class="collapse navbar-collapse">
-	          <ul class="nav navbar-nav">
-		       	<li id="linkHome" class="inactive"><a href="/home">Home</a></li>
-				<li id="linkTop" class="inactive"><a href="/toprated">Top Rated</a></li>
-				<li id="linkall" class="inactive"><a href="/alltrackers">All Trackers</a></li>
-				<li id="linkadd" class="inactive"><a href="/addtrackers">Add Tracker</a></li>
-				<li id="linkrate"class="active"><a href="/ratetrackers">Rate Tracker</a></li>
-				<li id="linkreport" class="inactive"><a href="/reportissue">Report Issue</a></li>
-				<li id="linkabout" class="inactive"><a href="/about">About</a></li>
+	          <ul class="nav navbar-nav navbar-right">
+		       	<li id="linkHome" class="inactive-link"><a href="/home">Home</a></li>
+				<li id="linkTop" class="inactive-link"><a href="/toprated">Top Rated</a></li>
+				<li id="linkall" class="inactive-link"><a href="/alltrackers">All Trackers</a></li>
+				<li id="linkadd" class="inactive-link"><a href="/addtrackers">Add Tracker</a></li>
+				<li id="linkrate"class="active-link"><a href="/ratetrackers">Rate Tracker</a></li>
+			<!--	<li id="linkreport" class="inactive"><a href="/reportissue">Report Issue</a></li>
+				<li id="linkabout" class="inactive"><a href="/about">About</a></li>-->
 				<li id="linkcontact"class="inactive"><a href="/contact">Contact</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </nav>
-	  	<div class="container">
+	  	<div id="mainContent" class="container">
 		    <h1><%= title %></h1>
-		    <p>Welcome to <%= title %></p>
+			<div id="featuredBg-trackers" class="page-content">
+				
+				<div id="allTrackersContent">
+					
+					 <% devices.forEach(function(item) { %>
+					 <div>
+					 	<p><span class="tracker-label">Device Name: </span><span class="tracker-data"><%= item.deviceName %></span>
+					 	<span class="rating-section"><input type="hidden" class="rating" data-filled="glyphicon glyphicon-heart" data-filled-selected="glyphicon glyphicon-heart" data-empty="glyphicon glyphicon-heart-empty" data-fractions="2" /></span>
+					 	</p>
+					 	<p><span class="tracker-label">Description: </span><%= item.description %></p>
+					 	<p><span class="tracker-label">Known Issues: </span>
+							<% if (typeof(item.issues) !== ''){ %>
 
+							<span>
+								<% for(var i=0; i<item.issues.length; i++) {%>
+									<span> <%= item.issues[i] %>,</span>
+
+									<% } %>
+							</span>
+							<% } %>
+	
+					 	</p>
+					 	<p><span class="tracker-label">Rating: </span><%= item.ratingid %> stars</p>
+        				<p><span class="tracker-label">Price: </span><span>$<%= item.price %></span></p>
+        				<p><span class="tracker-label">Features: </span> <span>Gps - </span><span><%= item.gps %></span>, 
+        				<span>Water Resistance - </span><span><%= item.waterResistance %></span>,
+        				<span>Heart Rate Monitor - </span><span><%= item.heartMonitor %></span>,
+        				<span>Sleep Monitor - </span><span><%= item.sleepMonitor %></span></p>
+        				<div><img src="/images/devices/<%= item.imgname %>"  /></div>
+        				<hr>
+    				</div>	 
+			<% }); %>
+
+			</div>
+			</div>
 	    </div>
 	 	<div id="footer">
 	   <% include partials/page/footer.ejs %>

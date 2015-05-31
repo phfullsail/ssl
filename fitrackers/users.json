@@ -1,0 +1,28 @@
+{
+  "users" : [
+    {
+        "userid": "1",
+        "fname": "pamela",
+        "lname": "holmes",
+        "username": "pholmes",
+        "password": "test",
+        "email": "phfullsail@fullsail.edu"
+    },
+    {
+        "userid": "3",
+        "fname": "mickey",
+        "lname": "mouse",
+        "username": "mouse",
+        "password": "test",
+        "email": "mmouse@disney.com"
+    },
+    {
+        "userid": "4",
+        "fname": "test",
+        "lname": "test",
+        "username": "test",
+        "password": "password",
+        "email": "test@test.com"
+    }
+  ]
+}

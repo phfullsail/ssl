@@ -13,13 +13,13 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><img src="/images/fitlogo.jpg" width="200px" height="78px" alt="Fit Tracker Logo" /></a>
+	          <a class="navbar-brand" href="#"><img src="/images/fit_logo.png" width="399px" height="125px" alt="Fit Tracker Logo" /></a>
 	        </div>
 	        <div id="navbar" class="collapse navbar-collapse">
 	          <ul class="nav navbar-nav navbar-right">
 		        <!--<li><a data-toggle="modal" href="#SignupModal"></span> Sign Up</a></li>-->
-		        <li><a href="/signup"></span> Sign Up</a></li>
-		        <li><a id="linkSignin"  href="/login"></span> Login</a></li>
+		        <li><a href="/about">About</a></li>
+		        <li><a id="linkSignin"  href="/login">Login</a></li>
 		        <!-- <li><a id="linkLogin"  data-toggle="modal"href="#loginModal"></span> Login</a></li> -->
 	          </ul>
 
@@ -110,12 +110,24 @@
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </nav>
-	  	<div class="container">
-		    <h1><%= title %></h1>
-		    <p>Welcome to <%= title %></p>
-
+	  	<div id="mainContent" class="container">
+		    <h1>Welcome to <%= title %></h1>
+		  
 	      	<div class="call-to-action">
-	      		<h2>Call to Action</h2>	
+	      		<button type="button" class="btn-success" id="buttonSignUp">Sign Up Now</button>
+	      		
+	      	</div>
+
+	      	<div id="featuredBg">
+	      		<h2>Featured Device - <strong><%= device %></strong></h2>
+	      		<div id="featureDesc" class="feature-content">
+	      			<p><%= description %></p>
+	      			<p><%= description2 %></p>
+	      			<p><a href="<%= source %>" target="_blank">Source</a></p>
+	      			<img src="<%= imageMain %>" alt="Fit Bit HR" width="500px" height="174px"/>
+	      		</div>
+	      		<div id="featureImage"><img src="<%= imageSecondary %>" alt="Fit Bit HR" height="478px" width="200px"/></div>
+	      		<div class="clear"></div>
 	      	</div>
 
 	    </div>
