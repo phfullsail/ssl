@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head><% include partials/page/head.ejs %></head>
+ 
+  <body class="<%= classname %>">
+  	<% include partials/page/header.ejs %>
+	   <nav class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#"><img src="/images/fitlogo.jpg" width="200px" height="78px" alt="Fit Tracker Logo" /></a>
+	        </div>
+	        <div id="navbar" class="collapse navbar-collapse">
+	          <ul class="nav navbar-nav">
+		       	<li id="linkHome" class="inactive"><a href="/home">Home</a></li>
+				<li id="linkTop" class="inactive"><a href="/toprated">Top Rated</a></li>
+				<li id="linkall" class="inactive"><a href="/alltrackers">All Trackers</a></li>
+				<li id="linkadd" class="inactive"><a href="/addtrackers">Add Tracker</a></li>
+				<li id="linkrate"class="active"><a href="/ratetrackers">Rate Tracker</a></li>
+				<li id="linkreport" class="inactive"><a href="/reportissue">Report Issue</a></li>
+				<li id="linkabout" class="inactive"><a href="/about">About</a></li>
+				<li id="linkcontact"class="inactive"><a href="/contact">Contact</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+	  	<div class="container">
+		    <h1><%= title %></h1>
+		    <p>Welcome to <%= title %></p>
+
+	    </div>
+	 	<div id="footer">
+	   <% include partials/page/footer.ejs %>
+	   </div>
+	 <% include partials/page/jsdefaults.ejs %>
+  </body>
+</html>

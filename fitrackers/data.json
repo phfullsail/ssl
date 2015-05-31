@@ -1,0 +1,182 @@
+{
+  "Devices": [
+    {
+        "deviceid": "1",
+        "deviceName": "FITBIT CHARGE HR",
+        "description": "Get motivated to move more with Charge, by tracking all-day activity like steps taken, distance traveled, calories burned, floors climbed and active minutes.",
+        "waterResistance": "SPLASH-PROOF",
+        "gps": "NO",
+        "steps": "yes",
+        "calories": "yes",
+        "distance": "yes",
+        "callerId": "YES",
+        "statsOnScreen": "YES",
+        "sleepMonitor": "YES",
+        "heartMonitor": "YES",
+        "issueid": null,
+        "ratingid": "2",
+        "price": "130",
+        "images": ["Lorenzo_Garcia_01_tn.jpg", "Lorenzo_Garcia_02_tn.jpg", "Lorenzo_Garcia_03_tn.jpg", "Lorenzo_Garcia_04_tn.jpg"]
+    },
+    {
+        "deviceid": "3",
+        "deviceName": "Jawbone Up Move",
+        "description": "This discreet, modern device has a nearly invisible LED display and accurately monitors steps, calories and sleep. It also connects to the new Smart Coach feature in the Up app, learns from your activity and habits, and provides advice on how to be healthier each day.",
+        "waterResistance": "SPLASH-PROOF",
+        "gps": "NO",
+        "steps": "yes",
+        "calories": "yes",
+        "distance": "yes",
+        "callerId": "NO",
+        "statsOnScreen": null,
+        "sleepMonitor": "YES",
+        "heartMonitor": null,
+        "issueid": null,
+        "ratingid": "0",
+        "price": "43"
+    },
+    {
+        "deviceid": "4",
+        "deviceName": "TomTom Runner Cardio",
+        "description": "Can track your heart rate zones for a more efficient workout, plot your runs on a map and record your altitude, pace and lap times. Android and iOS apps also let you upload your data to the cloud on the fly. ",
+        "waterResistance": "Swim-proof",
+        "gps": "YES",
+        "steps": "yes",
+        "calories": "yes",
+        "distance": "yes",
+        "callerId": null,
+        "statsOnScreen": "YES",
+        "sleepMonitor": "YES",
+        "heartMonitor": "YES",
+        "issueid": null,
+        "ratingid": "0",
+        "price": "270"
+    },
+    {
+        "deviceid": "5",
+        "deviceName": "Garmin Vivoactive",
+        "description": "It's an all-purpose fitness monitor that also delivers smartphone notifications to your wrist. Its lightweight, comfortable design can be customized to fit your style, with bright, silicon, colored bands or chic, classy leather bands. Plus, you can download watch faces from the Garmin Connect IQ store to personalize your look. ",
+        "waterResistance": "Swim-proof",
+        "gps": "YES",
+        "callerId": null,
+        "statsOnScreen": null,
+        "sleepMonitor": "YES",
+        "heartMonitor": "NO",
+        "issueid": null,
+        "ratingid": "0",
+        "price": "250"
+    },
+    {
+        "deviceid": "6",
+        "deviceName": "Fitbit Surge",
+        "description": "The Fitbit Surge is built for multi-sports. As well as the usual running and cycling, the Surge is also great for the gym, enabling you to track static cardio workouts that are the foil of most movement-based trackers. Not only that, but the full OLED screen will display calls, texts and notifications in full, making this a true fitness super watch.",
+        "waterResistance": "splash-proof",
+        "gps": "yes",
+        "callerId": "yes",
+        "statsOnScreen": "yes",
+        "sleepMonitor": "yes",
+        "heartMonitor": "yes",
+        "issueid": null,
+        "ratingid": "0",
+        "price": "0"
+    },
+        {
+        "deviceid": "8",
+        "deviceName": "Jawbone Up24",
+        "description": "The stylish band can track everything you would expect -- steps, distance, calories and sleep -- and a recent software update improved battery life to 14 days. You can set a silent alarm to wake you up in the morning, alerts to remind you to get up and move, and daily activity goals. It's also waterproof, meaning you don't have to take it off before you shower.",
+        "waterResistance": "water-proof",
+        "gps": "no",
+        "steps": "yes",
+        "calories": "yes",
+        "distance": "yes",
+        "callerId": "no",
+        "statsOnScreen": "no",
+        "sleepMonitor": "yes",
+        "heartMonitor": "no",
+        "issueid": null,
+        "ratingid": "3.5",
+        "price": "130"
+    },
+        {
+        "deviceid": "9",
+        "deviceName": "Misfit Flash",
+        "description": "This small (and waterproof) device tracks your steps, distance and calories. There is also automatic sleep tracking, and it has a replaceable coin battery that lasts six months. The tracker can be worn on your wrist or your waist with an included clip-on accessory. The mobile app, available for Android, iOS and Windows Phone, also integrates with a variety of other ecosystems, such as RunKeeper, MapMyFitness and MyFitnessPal.",
+        "waterResistance": "splash-proof",
+        "gps": "no",
+        "steps": "yes",
+        "calories": "yes",
+        "distance": "yes",
+        "callerId": "yes",
+        "statsOnScreen": "no",
+        "sleepMonitor": "yes",
+        "heartMonitor": "no",
+        "issueid": null,
+        "ratingid": "3.5",
+        "price": "50"
+    },
+        {
+        "deviceid": "7",
+        "deviceName": "Pivotal Tracker",
+        "description": "The Pivotal Tracker 1 is incredibly affordable. It can track your daily activities, sleep and even your hydration level. There's a silent alarm for gentle wake ups and inactivity alerts to get you moving.",
+        "waterResistance": "splash-proof",
+        "gps": "no",
+        "callerId": "yes",
+        "statsOnScreen": "yes",
+        "sleepMonitor": "yes",
+        "heartMonitor": "yes",
+        "issueid": null,
+        "ratingid": "3.5",
+        "price": "31.38"
+    }
+],
+
+  "users" : [
+    {
+        "userid": "1",
+        "fname": "pamela",
+        "lname": "holmes",
+        "username": "pholmes",
+        "password": "testpw",
+        "email": "phfullsail@fullsail.edu"
+    },
+    {
+        "userid": "3",
+        "fname": "mickey",
+        "lname": "mouse",
+        "username": "mmouse",
+        "password": "mmouse",
+        "email": "mmouse@disney.com"
+    },
+    {
+        "userid": "4",
+        "fname": "test",
+        "lname": "test",
+        "username": "test",
+        "password": "password",
+        "email": "test@test.com"
+    }
+],
+
+ "issues" : [
+    {
+        "issueid": "1",
+        "issue": "syncing issues"
+    },
+    {
+       "issueid": "2",
+        "issue": "random reboots"
+    },
+    {
+       "issueid": "3",
+        "issue": "app crashes"
+    },
+      {
+       "issueid": "4",
+        "issue": "rashes"
+    },
+      {
+       "issueid": "5",
+        "issue": "app crashes"
+    }
+]
+}
