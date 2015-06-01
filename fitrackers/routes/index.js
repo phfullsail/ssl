@@ -20,35 +20,6 @@ var user = require('../user');
   users = appdata.users;
 
 
- /*appdata.users.forEach(function(item) {
-  user = user.concat(item.user);
-  });*/
-
- /*function findById(id, fn) {
-  var idx = id - 1;
-  if (users[idx]) {
-    fn(null, users[idx]);
-  } else {
-    fn(new Error('User ' + id + ' does not exist'));
-  }
-}
-
-function findByUsername(username, fn) {
-  for (var i = 0, len = users.length; i < len; i++) {
-    var user = users[i];
-    if (user.username === username) {
-      return fn(null, user);
-    }
-  }
-  return fn(null, null);
-}*/
-
-
-// Passport session setup.
-//   To support persistent login sessions, Passport needs to be able to
-//   serialize users into and deserialize users out of the session.  Typically,
-//   this will be as simple as storing the user ID when serializing, and finding
-//   the user by ID when deserializing.
 passport.serializeUser(function(user, done) {
   done(null, user.id);
 });
@@ -60,20 +31,11 @@ passport.deserializeUser(function(id, done) {
 });
 
 
-// Use the LocalStrategy within Passport.
-//   Strategies in passport require a `verify` function, which accept
-//   credentials (in this case, a username and password), and invoke a callback
-//   with a user object.  In the real world, this would query a database;
-//   however, in this example we are using a baked-in set of users.
 passport.use(new LocalStrategy(
   function(username, password, done) {
     // asynchronous verification, for effect...
     process.nextTick(function () {
       console.log('here');
-      // Find the user by username.  If there is no user with the given
-      // username, or the password is not correct, set the user to `false` to
-      // indicate failure and set a flash message.  Otherwise, return the
-      // authenticated `user`.
       findByUsername(username, function(err, user) {
         if (err) { return done(err); }
         if (!user) { return done(null, false, { message: 'Unknown user ' + username }); }
@@ -112,29 +74,6 @@ router.get('/forgot', function(req, res, next) {
   	classname: 'forgot' });
 });
 
-/*router.get('/user', function(req, res, next) {
-  appdata.users.forEach(function(item) {
-  user = user.concat(item.user);
-  res.json(user.getInfo());
-  });
-  
-});*/
-
-/*router.user = function(req, res) {
-  var user = require('../user'); 
-
-
-  var user = [];
-  var users = [];
-
-  users = appdata.users;
-
-
-  for(var i =0;i<users.length;i++){
-   res.json(users[i].getInfo());
-  }  
- 
-};*/
 
 router.user = function(req, res) {
   var user = require('../user'); 
@@ -150,9 +89,6 @@ appdata.users.forEach(function(item) {
   res.json(dataUser.getInfo());
   });
 
-// for(var i =0;i<users.length;i++){
- //  res.json(users[i].getInfo());
- // };  
 };
 
 router.get('/login', function(req, res){
@@ -165,7 +101,7 @@ router.get('/login', function(req, res){
 });
 
 
-/// this one works
+
 router.post('/login', function (req, res) {
   var post = req.body;
   var user = [];
@@ -174,20 +110,14 @@ router.post('/login', function (req, res) {
   users = appdata.users;
   users.forEach(function(item) {
   user = user.concat(item.user);
- // console.warn('user',item.username);
+ 
 
     if (post.username ===  item.username && post.password === item.password) {
       req.session.user_id = item.username;
       res.redirect('/home');
     } else {
-     // res.redirect('/login');
-     console.log('data', post.username + ' - name  password - ' + post.password);
-   //  req.session.user_id = '';
-   //res.data = 'error';
-   //res.end("yes");
    res.message = "Invalid";
- req.session.error = 'Authentication failed, please check your ' ;
-  // res.redirect('back');
+    req.session.error = 'Authentication failed, please check your ' ;
    res.redirect('/login'); 
     }
    });
@@ -198,36 +128,6 @@ router.get('/signup', function(req, res, next) {
     title: 'Fit Tracker Optimizer Sign Up',
     classname: 'signup'});
 });
-
-/*router.put('/signup/add', function(req, res, next) {
-  res.render('signup', { 
-    title: 'Fit Tracker Optimizer Sign Up',
-    classname: 'signup'});
-});*/
-
-/*router.post('/signup', function(req, res) {
-    var db = appdata.users;
-    var post = req.body;
-    var user = {
-      fname: post.fname,
-      lname: post.lname,
-      username: post.username,
-      password: post.password,
-      email: post.email
-    };
-    var userString = JSON.stringify(user);
-    res.header("Access-Control-Allow-Origin", "*");
-    res.send("OK");
-    jf.writeFile(users, userString, function(err) {
- // console.log(err)
-})*/
-    
-/*    db.insert(userString, function(err, result){
-        res.send(
-            (err === null) ? { msg: '' } : { msg: err }
-        );
-    });*/
-//});
 
 router.get('/home', function(req, res, next) {
   sess=req.session;
@@ -398,22 +298,6 @@ router.get('/contact', function(req, res, next) {
     }
 });
 
-/*request({
-    url: 'https://modulus.io/contact/demo', //URL to hit
-    qs: {from: 'blog example', time: +new Date()}, //Query string data
-    method: 'POST',
-    //Lets post the following key/values as form
-    form: {
-        field1: 'data',
-        field2: 'data'
-    }
-}, function(error, response, body){
-    if(error) {
-        console.log(error);
-    } else {
-        console.log(response.statusCode, body);
-    }
-});*/
 
 module.exports = router;
 
